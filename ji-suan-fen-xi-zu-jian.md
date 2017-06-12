@@ -237,12 +237,61 @@ public interface AnalysisComponentIO {
 ```
 
 * 用户输入参数规范
+* ```java
+  package com.orient.analysisflow.component;
 
-## 计算分析组件的前台规范
+  /**
+   * Created by mengbin on 2017/5/22.
+   */
+  public  class AnalysisInterruptParam {
+      String name;
+      int    type;
+      String showValue;
+      String data;
 
-* 组件结果显示的规范
+      static public int TYPE_INT = 0;
+      static public int TYPE_DOUBLE = 1;
+      static public int TYPE_FLOAT = 2;
+      static public int TYPE_FILE = 3;
+      static public int TYPE_STRING = 4;
+      static public int TYPE_BOOLEAN = 5;
 
-* 组件配置信息设置的前台规范
+      public String getName() {
+          return name;
+      }
+
+      public void setName(String name) {
+          this.name = name;
+      }
+
+      public int getType() {
+          return type;
+      }
+
+      public void setType(int type) {
+          this.type = type;
+      }
+
+      public String getShowValue() {
+          return showValue;
+      }
+
+      public void setShowValue(String showValue) {
+          this.showValue = showValue;
+      }
+
+      public String getData() {
+          return data;
+      }
+
+      public void setData(String data) {
+          this.data = data;
+      }
+  }
+
+  ```
+
+* # 组件配置信息设置的前台规范
 
 
 
