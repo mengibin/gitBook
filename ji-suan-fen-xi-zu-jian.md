@@ -293,5 +293,8 @@ public  class AnalysisInterruptParam {
 
 * ## 计算分析组件的前台规范
 
+* 组件结果显示的规范
+* 组件配置信息设置的前台规范
+
 
 
