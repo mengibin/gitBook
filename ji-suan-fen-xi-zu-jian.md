@@ -288,9 +288,7 @@ public interface AnalysisComponentIO {
           this.data = data;
       }
   }
-
   ```
-
 * # 组件配置信息设置的前台规范
 
 
