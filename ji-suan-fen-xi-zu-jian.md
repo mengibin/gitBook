@@ -106,6 +106,44 @@ public interface AnalysisComponentRule {
 
 
 }
+```
+
+* 判断组件规范
+
+```java
+package com.orient.analysisflow.decision;
+
+import com.orient.analysisflow.component.AnalysisComponentRule;
+import com.orient.analysisflow.component.AnalysisComponentIO;
+
+import java.util.List;
+
+/**
+ * ${DESCRIPTION}
+ *
+ * @author mengbin
+ * @create 2017-03-21 下午3:20
+ */
+public interface AnalysisDecisionRule extends AnalysisComponentRule{
+
+
+    /**
+     * 获取组件控制流中不同的流向
+     * @return
+     */
+    public List<String> getSelfOutComes();
+
+    /**
+     *
+     * @param inputData 输入的数据
+     * @param outComeIndex 输出的outcome的索引,从0开始
+     * @return
+     */
+    boolean exec(List<AnalysisComponentIO> inputData, StringBuffer outComeIndex);
+
+
+
+}
 
 ```
 
