@@ -234,7 +234,6 @@ public interface AnalysisComponentIO {
     public void setDimensionDataCount(int[] dataCount);
 
 }
-
 ```
 
 * 用户输入参数规范
@@ -290,8 +289,9 @@ public  class AnalysisInterruptParam {
         this.data = data;
     }
 }
-
 ```
+
+* ## 计算分析组件的前台规范
 
 
 
